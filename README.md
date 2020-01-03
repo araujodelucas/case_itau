@@ -6,3 +6,6 @@ Ambiente desenvolvido para atender a demanda do case do Itaú
 
 # . Segunda parte do case - em desenvolvimento
 - Modelar uma base de dados em um banco de dados, onde eu escolhi para ser o MySQL (versão 14.14), para armazenar esses tweets e gerar um filtro de determinados tweets
+
+# OBSERVAÇÃO
+- Conforme foi recomendado, a idéia é subir todo o ambiente em Docker, para evitar que seja executado com sucesso na minha máquina, e em outras não. Para agilizar, estou desenvolvendo o ambiente localmente, e irei montar Dockerfile e Docker-Compose para facilitar na reutilização e gerenciamento do ambiente
