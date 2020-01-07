@@ -11,17 +11,8 @@ services:
         #nome do container
         container_name: db-mysql
         
-        #inserindo o container na rede itau, para comunicação com os outros containers dessa mesma rede
-        networks:
-            - case-itau
-        
+        #variáveis de ambiente para criação da base de dados, com o usuário root e sem a necessidade de informar a senha
         environment:
             - MYSQL_DATABASE=DB_HASHTAGS
             - MYSQL_USER=root
             - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-
-#criando rede para a comunicação dos containers
-networks:
-    case-itau:        
-        #utilizando o driver default
-        driver: bridge

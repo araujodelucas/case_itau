@@ -16,13 +16,3 @@ services:
         
         #nome do container
         container_name: app-python-coleta-hashtags-twitter
-        
-        #inserindo o container na rede itau para comunicação com os outros containers da mesma rede
-        networks:
-            - case-itau
-    
-#criando rede para a comunicação dos containers
-networks:
-    case-itau:        
-        #utilizando o driver default
-        driver: bridge
