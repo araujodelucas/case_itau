@@ -1,6 +1,6 @@
 # Case itaú
-Ambiente desenvolvido para atender a demanda do case do Itaú
-Em anexo nesse repositório, está o arquivo Plano_de_trabalho_App_Proc_Selet_Itau.docx, contendo os detalhes gerenciais do que foi planejado, realizado, os desvios e outras informações. OBS: O conteúdo do arquivo foi escrito no Microsoft Word 2016 
+- Ambiente desenvolvido para atender a demanda do case do Itaú
+- Em anexo nesse repositório, está o arquivo Plano_de_trabalho_App_Proc_Selet_Itau.docx, contendo os detalhes gerenciais do que foi planejado, realizado, os desvios e outras informações. OBS: O conteúdo do arquivo foi escrito no Microsoft Word 2016 
 # . APLICAÇÃO PYTHON PARA COLETA DOS TWEETS 
 - Criei uma conta de desenvolvedor no Twitter, para conseguir coletar dados do Twitter através da sua API. Foi preciso aguardar um período, até que terminassem a análise da minha conta e liberassem o acesso a API do Twitter.
 - Desenvolvi uma aplicação, onde escolhi a linguagem de programação Python (versão 3), para conectar na API do Twitter e coletar alguns tweets que contenham as seguintes #tags: #openbanking, #apifirst, #devops, #cloudfirst, #microservices, #apigateway,#oauth, #swagger, #raml, #openapis
