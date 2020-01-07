@@ -23,3 +23,8 @@ Ambiente desenvolvido para atender a demanda do case do Itaú
 - 5º - copiar (CTRL + C) o conteúdo do arquivo script_db_mysql.sql (anexado nesse repositório) e colar (CTRL + V) o conteúdo dentro do terminal do MySQL, e depois digitar ENTER
 - Caso queira explorar outras opções administrativas do container, além do build e up, analisar as possibilidades executando o comando abaixo:
 - docker-compose --help
+- Após todos os tópicos anteriores realizados com sucesso (todos os tópicos dos dois containers), execute os comandos abaixo para filtrar quais são os cinco usuários, da amostra coletada e armazenada, com mais seguidores no Twitter:
+- 1º - docker exec -t db-mysql /bin/bash
+- 2º - mysql -u root
+- 3º - use DB_HASHTAGS;
+- 4º - select distinct nome_usuario as 'Nome do Usuario', qtde_seguidor as 'Quantidade de seguidores' from Tb_hashtags order by qtde_seguidor desc limit 5;
