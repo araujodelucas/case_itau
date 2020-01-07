@@ -1,6 +1,3 @@
-/*criando base de dados*/
-CREATE DATABASE DB_HASHTAGS;
-
 /*usando base dados criada*/
 USE DB_HASHTAGS;
 
