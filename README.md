@@ -7,7 +7,7 @@ Ambiente desenvolvido para atender a demanda do case do Itaú
 - Supondo que já tenha clonado e esteja dentro do diretório desse repositório local, seguir os comandos abaixo para inicializar o container da aplicação:
 - 1º - docker-compose -f app-python-docker-compose.yml build
 - 2º - docker-compose -f app-python-docker-compose.yml up
-OBS: É NECESSÀRIO subir o container do banco de dados primeiro, para conseguir armazenar as informações na tabela Tb_hashtags.
+- OBS: É NECESSÀRIO subir o container do banco de dados primeiro, para conseguir armazenar as informações na tabela Tb_hashtags.
 - Caso queira explorar outras opções administrativas do container, além do build e up, analisar as possibilidades executando o comando abaixo:
 - docker-compose --help
 
