@@ -1,0 +1,27 @@
+#versão do docker-compose
+version: "3.0"
+
+services:
+    #serviço do banco de dados mysql que irá armazenar os tweets
+    db-mysql:
+                
+        #imagem do MySQL já pronta à ser utilizada
+        image: mysql:5.7
+        
+        #nome do container
+        container_name: db-mysql
+        
+        #inserindo o container na rede itau, para comunicação com os outros containers dessa mesma rede
+        networks:
+            - case-itau
+        
+        environment:
+            - MYSQL_DATABASE=DB_HASHTAGS
+            - MYSQL_USER=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+
+#criando rede para a comunicação dos containers
+networks:
+    case-itau:        
+        #utilizando o driver default
+        driver: bridge
